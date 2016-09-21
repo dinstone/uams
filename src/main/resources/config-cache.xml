@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+	<property>
+		<name>redis.server.host</name>
+		<value>182.92.148.61</value>
+	</property>
+	<property>
+		<name>redis.server.port</name>
+		<value>6379</value>
+	</property>
+	<property>
+		<name>redis.pool.maxtotal</name>
+		<value>10</value>
+	</property>
+	<property>
+		<name>redis.pool.minidle</name>
+		<value>2</value>
+	</property>
+	<property>
+		<name>redis.auth.password</name>
+		<value>www.tongbanjiaoyu.com@moc.uyoaijnabgnot.www</value>
+	</property>
+</configuration>

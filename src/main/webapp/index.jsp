@@ -1,0 +1,1 @@
+<jsp:forward page="authen/login.do"></jsp:forward>
