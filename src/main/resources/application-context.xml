@@ -15,12 +15,12 @@
 	<context:component-scan base-package="com.dinstone.uams.api" />
 
 	<import resource="jaxrs-cxf.xml" />
-
+	<context:property-placeholder location="classpath:jdbc.properties" />
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
-		<property name="url" value="jdbc:mysql://182.92.148.61:3307/uams?useUnicode=true&amp;characterEncoding=utf8&amp;allowMultiQueries=true" />
-		<property name="username" value="root" />
-		<property name="password" value="yangtao" />
+		<property name="url" value="${jdbc.url}" />
+		<property name="username" value="${jdbc.username}" />
+		<property name="password" value="${jdbc.password}" />
 		<property name="maxWait" value="30" />
 		<property name="initialSize" value="1" />
 		<property name="maxActive" value="5" />
